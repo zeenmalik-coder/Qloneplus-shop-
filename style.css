@@ -552,6 +552,196 @@ body{
     filter: blur(130px);
 }
 
+/* ===============================
+   RESPONSIVE MEDIA QUERIES
+   Keep same carousel behavior but adapt sizes
+   =============================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .carousel {
+    height: 650px;
+  }
+
+  .carousel .list {
+    width: 100%;
+    max-width: 92%;
+  }
+
+  .carousel .list .item img {
+    width: 48%;
+  }
+
+  .carousel .list .item:nth-child(2) .introduce {
+    width: 360px;
+  }
+
+  .carousel .list .item .introduce .topic {
+    font-size: 3em;
+  }
+
+  .carousel .list .item .introduce .title {
+    font-size: 1.4em;
+  }
+
+  .carousel .list .item .introduce .des {
+    font-size: 0.9em;
+  }
+
+  #prev,
+  #next {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1em;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carousel {
+    height: 580px;
+    overflow: hidden;
+  }
+
+  .carousel .list {
+    width: 100%;
+    max-width: 94%;
+    height: 75%;
+  }
+
+  .carousel .list .item {
+    width: 90%;
+    height: 100%;
+  }
+
+  .carousel .list .item img {
+    width: 58%;
+    right: -10px;
+    top: 48%;
+    transform: translateY(-50%);
+  }
+
+  .carousel .list .item:nth-child(2) .introduce {
+    width: 280px;
+    top: 48%;
+    transform: translateY(-50%);
+  }
+
+  .carousel .list .item .introduce .topic {
+    font-size: 2em;
+    line-height: 1.1em;
+  }
+
+  .carousel .list .item .introduce .title {
+    font-size: 1.2em;
+  }
+
+  .carousel .list .item .introduce .des {
+    font-size: 0.9em;
+  }
+
+  .carousel .list .item .introduce .seeMore {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+
+  .carousel.showDetail .list .item:nth-child(2) img {
+    width: 50%;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .carousel.showDetail .list .item:nth-child(2) .detail {
+    width: 85%;
+    right: 5%;
+    text-align: right;
+  }
+
+  .carousel.showDetail .list .item:nth-child(2) .detail .title {
+    font-size: 2.2em;
+  }
+
+  .carousel.showDetail .list .item:nth-child(2) .detail .des {
+    font-size: 0.95em;
+  }
+
+  .carousel.showDetail .list .item:nth-child(2) .detail .specifications {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .carousel.showDetail .list .item:nth-child(2) .detail .specifications div {
+    width: 80px;
+  }
+
+  .carousel.showDetail .list .item:nth-child(2) .checkout button {
+    font-size: 0.8em;
+    padding: 6px 10px;
+  }
+
+  #prev,
+  #next {
+    width: 32px;
+    height: 32px;
+    font-size: 1em;
+  }
+
+  #back {
+    font-size: 0.9em;
+  }
+
+  .carousel::before {
+    width: 320px;
+    height: 180px;
+    filter: blur(120px);
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .carousel {
+    height: 500px;
+  }
+
+  .carousel .list {
+    max-width: 100%;
+  }
+
+  .carousel .list .item img {
+    width: 65%;
+    right: -15px;
+  }
+
+  .carousel .list .item:nth-child(2) .introduce {
+    width: 240px;
+  }
+
+  .carousel .list .item .introduce .topic {
+    font-size: 1.6em;
+  }
+
+  .carousel .list .item .introduce .title {
+    font-size: 1em;
+  }
+
+  .carousel .list .item .introduce .des {
+    font-size: 0.8em;
+  }
+
+  #prev,
+  #next {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9em;
+  }
+
+  #back {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+}
+
 
  section.about h2 {
       font-size: 2.2rem;
@@ -781,4 +971,5 @@ body{
   font-size: 0.9rem;
   color: #777;
 }
+
 
